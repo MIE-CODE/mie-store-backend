@@ -1,5 +1,6 @@
 const express = require("express");
 const routes = require("./routes/api");
+const cors = require("cors");
 const bodyParser = require("body-parser");
 const { default: mongoose, connect } = require("mongoose");
 const app = express();
@@ -15,7 +16,7 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
-
+app.use(cors("*"));
 app.use(bodyParser.json());
 app.use("/api", routes);
 app.use((err, req, res, next) => {
