@@ -1,7 +1,7 @@
 {
   "name": "mie-store-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "- run #`npm install` to install or the dependencies\r - to start the project run `npm start or nodemon index`",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index",
